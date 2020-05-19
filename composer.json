@@ -1,0 +1,29 @@
+{
+    "name": "klipper/console",
+    "type": "library",
+    "description": "Console component of Klipper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "François Pluchino",
+            "email": "francois.pluchino@klipper.dev"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4.0",
+        "symfony/console": "^4.4.0"
+    },
+    "autoload": {
+        "psr-4": { "Klipper\\Component\\Console\\": "" },
+        "exclude-from-classmap": [
+            "**/Tests/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
