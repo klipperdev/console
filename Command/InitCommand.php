@@ -34,7 +34,7 @@ class InitCommand extends Command
     /**
      * @throws \Exception
      */
-    protected function execute(InputInterface $input, OutputInterface $output): void
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $commands = [];
         $commandNames = [];
@@ -71,6 +71,8 @@ class InitCommand extends Command
                 }
             }
         }
+
+        return 0;
     }
 
     /**
